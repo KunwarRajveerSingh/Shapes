@@ -1,0 +1,81 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.21205871834548395 0.2431179267327906 0.9465330283063662 1.4891665150679845
+  position 0.684058045735338 -3.48332790398267 1.8320280007633638
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+DEF BOX Transform {
+  translation -0.02 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+  ]
+}
+DEF CAPSULE Transform {
+  translation 0.7 0.9 0.624
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.7 0.3 0.5
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.3
+        radius 0.1
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation 2 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.62 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.3
+        height 0.5
+        subdivision 36
+      }
+    }
+  ]
+}
+DEF CYLINDER Transform {
+  translation 0.6 0.5 0.13
+  scale 0.5 0.6 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.1 0
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.9
+        radius 0.2
+      }
+    }
+  ]
+}
